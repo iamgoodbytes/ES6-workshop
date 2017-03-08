@@ -16,9 +16,9 @@ class NotesApp {
         console.log("adding note");
 
         // add a new note to the screen
-        var message = this.notesInput.value;
-        var newNote = document.createElement("div");
-        var deleteLink = document.createElement("a");
+        let message = this.notesInput.value;
+        let newNote = document.createElement("div");
+        let deleteLink = document.createElement("a");
         deleteLink.setAttribute("class", "card-remove");
         deleteLink.setAttribute("href", "#");
         deleteLink.innerHTML = "Remove";
@@ -39,7 +39,7 @@ class NotesApp {
     removeNote(event){
         console.log("removing note");
 
-        var elementToDelete = event.target.parentElement;
+        let elementToDelete = event.target.parentElement;
         this.notesContainer.removeChild(elementToDelete);
         console.log(event);
         event.preventDefault();
@@ -55,4 +55,4 @@ class NotesApp {
 
 
 
-var app = new NotesApp();
+let app = new NotesApp();
