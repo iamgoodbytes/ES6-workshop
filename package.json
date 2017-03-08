@@ -1,0 +1,27 @@
+{
+  "name": "es6-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-env": "^1.2.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-env": "^1.2.1"
+  },
+  "scripts": {
+    "build": "babel --presets env scripts/app.es6.js -o scripts/app.es5.js -s true -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamgoodbytes/ES6-workshop.git"
+  },
+  "author": "@goodbytes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamgoodbytes/ES6-workshop/issues"
+  },
+  "homepage": "https://github.com/iamgoodbytes/ES6-workshop#readme"
+}
