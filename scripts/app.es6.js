@@ -24,7 +24,7 @@ class NotesApp {
         deleteLink.innerHTML = "Remove";
         deleteLink.addEventListener("click", this.removeNote.bind(this));
         
-        newNote.innerHTML = "<p>" + message + "</p>";
+        newNote.innerHTML = `<p>${message}</p>`;
         newNote.setAttribute("class", "card");
         newNote.appendChild(deleteLink);
         
