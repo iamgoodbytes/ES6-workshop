@@ -40,7 +40,11 @@ class NotesApp {
         console.log("removing note");
 
         let elementToDelete = event.target.parentElement;
-        this.notesContainer.removeChild(elementToDelete);
+        elementToDelete.setAttribute("class", "animated bounceOutLeft");
+        setTimeout(
+            () => { this.notesContainer.removeChild(elementToDelete) }, 500
+        );
+        
         console.log(event);
         event.preventDefault();
     }
