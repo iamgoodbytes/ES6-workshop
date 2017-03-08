@@ -14,7 +14,7 @@ class NotesApp {
     
     addNote(e){
         console.log("adding note");
-
+        
         // add a new note to the screen
         let message = this.notesInput.value;
         let newNote = document.createElement("div");
