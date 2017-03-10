@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IMD Notes App</title>
+    <link rel="stylesheet" href="css/surface_styles.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .card{margin: 1em; flex: 0 1 20%;}
+        .notes{align-items: center;}
+        .card-remove{display:inline-block;}
+    </style>
+</head>
+<body>
+    <div class="g--10 m--1">
+      <form action="">
+          <input type="text" id="txtAddNote" placeholder="Add a note">
+          <button type="button" id="btnAddNote" class="btn--float btn--primary">+</button>          
+      </form>
+    </div>
+    
+    <div class="notes g--10 m--1 container--wrap">
+        <div class="card">
+          <p>This is a sample card.</p>
+          <a href="#" class="card-remove">Remove</a>
+        </div>
+        
+    </div>
+    
+    <script src="scripts/app.es5.js"></script>
+</body>
+</html>
